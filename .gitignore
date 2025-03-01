@@ -1,0 +1,58 @@
+# Build Folders
+bin/
+obj/
+
+# Visual Studio Files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.userprefs
+*.psess
+*.vsp
+*.vspx
+*.vspscc
+*.vssscc
+*.sln.docstates
+*.VC.db
+
+# Visual Studio Code
+.vscode/
+
+# Other IDE/Tool Specific
+*.ipch
+*.pidb
+*.booproj
+*.svd
+
+# Rider
+.idea/
+*.sln.iml
+
+# NuGet Packages
+*.nupkg
+# Uncomment if you store the packages folder in the repository
+# packages/
+
+# Environment and OS Files
+.DS_Store
+Thumbs.db
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Legacy Reports folder
+TestResult.xml
+TestResult.trx
+
+# Coverage and test result directories
+coverage/
+TestResults/
+
+# Publish Web Output
+publish/
+wwwroot/
+
+# Local Tooling
+*.local.json

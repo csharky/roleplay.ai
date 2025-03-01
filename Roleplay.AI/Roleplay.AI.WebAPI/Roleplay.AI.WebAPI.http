@@ -1,0 +1,6 @@
+@Roleplay.AI.WebAPI_HostAddress = http://localhost:5177
+
+GET {{Roleplay.AI.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
