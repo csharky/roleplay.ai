@@ -33,11 +33,12 @@ app.UseHttpsRedirection();
 
 app.MapGet("/hi", async () => "hi");
 
+var context = await SillyTavernContextLoader.LoadAsync("./context.json");
+var instruct = await SillyTavernInstructLoader.LoadAsync("./instruct.json");
+var options = await ChatOptionsLoader.Load(); 
+
 app.MapPost("/chat", async (ChatRequest request, IChatClient chatClient) =>
 {
-    var context = await SillyTavernContextLoader.LoadAsync("./context.json");
-    var instruct = await SillyTavernInstructLoader.LoadAsync("./instruct.json");
-
     var data = new StoryData
     {
         character = "Алина",
@@ -87,7 +88,6 @@ app.MapPost("/chat", async (ChatRequest request, IChatClient chatClient) =>
 
     app.Logger.LogInformation(JsonSerializer.Serialize(messages));
 
-    var options = await ChatOptionsLoader.Load(); 
     options.StopSequences ??= new List<string>();
     options.StopSequences.Add($"###{data.user}:");
     
