@@ -1,0 +1,10 @@
+{
+  "story_string": "### Инструкция:\nНапиши следующий ответ персонажа \"{{character}}\" в вымышленном чате по отыгрышу ролей персонажей \"{{user}}\" и \"{{character}}\". Используй прилагаемый лист персонажей и примеры диалогов для форматирования направления и речевых моделей персонажей.\n\nСистемный запрос:{{#if system}}{{system}}\n\n{{/if}}{{#if wiBefore}}{{wiBefore}}\n\n{{/if}}Описание персонажа {{character}}:\n{{#if description}}{{description}}\n{{/if}}{{#if personality}}Описание характера персонажа {{character}}: {{personality}}\n\n{{/if}}{{#if scenario}}Стартовый сценарий: {{scenario}}\n\n{{/if}}{{#if persona}}Описание персонажа {{user}}: {{persona}}\n\n{{/if}}Отыгрывай роль персонажа {{character}}\n\n{{#if wiAfter}}{{wiAfter}}\n{{/if}}",
+  "example_separator": "Example roleplay chat:",
+  "chat_start": "Принимая во внимание вышеизложенную информацию,\nвы должны вступить в ролевой разговор с {{user}} ниже этой строки.\nНе пишите диалоговые реплики {{user}} в своих ответах.\nПишите только ответ персонажа {{character}}",
+  "always_force_name2": true,
+  "trim_sentences": true,
+  "include_newline": true,
+  "single_line": false,
+  "name": "Context-Alice"
+}
